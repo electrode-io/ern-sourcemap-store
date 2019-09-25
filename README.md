@@ -140,7 +140,7 @@ This can be used when CodePush is promoting an existing bundle, when the bundle 
 
 Example:
 
-``POST /sourcemaps/codepush/myapp/android/1.0.0/QA/v37/1.0.0/Production/v38`
+`POST /sourcemaps/codepush/myapp/android/1.0.0/QA/v37/1.0.0/Production/v38`
 
 Copy the sourcemap associated to the bundle CodePushed to `QA` with label `v37`, to Production with label `v38` for the same native application version (this mostly correspond to a bundle that has been promoted on the CodePush server from `QA` to `Production`)
 
