@@ -285,5 +285,9 @@ export class SourceMapStoreServer {
         res.sendStatus(201);
       },
     );
+
+    this.app.get("/db", (req, res) => {
+      res.status(200).json(this.db.data);
+    });
   }
 }

@@ -637,5 +637,22 @@ touchableHandlePress@878:34 [react-native/Libraries/Components/Touchable/Touchab
           });
       });
     });
+
+    describe("GET /db", () => {
+      it("should return the database data", (done) => {
+        const sut = createServer({ rootPath: storeFixturePath });
+        chai
+          .request(sut.app)
+          .get("/db")
+          .end((err, res) => {
+            if (err) {
+              return done(err);
+            }
+            expect(res).to.be.json;
+            expect(res.body).deep.equal(sut.db.data);
+            done();
+          });
+      });
+    });
   });
 });
