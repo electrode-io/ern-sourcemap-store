@@ -1,5 +1,6 @@
 /// <reference types="../types/index" />
 
+import cors from "cors";
 import debug from "debug";
 import express from "express";
 import fs from "fs";
@@ -101,6 +102,7 @@ export class SourceMapStoreServer {
   }
 
   private setupMiddlewares() {
+    this.app.use(cors());
     this.app.use(express.json());
     this.app.use((req, res, next) => {
       if (req.is("text/*")) {
