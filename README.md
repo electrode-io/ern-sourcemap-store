@@ -48,6 +48,10 @@ _Get the current status of the server_
 
 Response will always return `HTTP 200 OK` status code as long as the server is running.
 
+#### GET /db
+
+_Return current database object as JSON_
+
 #### POST /symbolicate/container/:app/:platform/:version/:containerVersion
 
 _Symbolicate a stack trace of a Container bundle_
