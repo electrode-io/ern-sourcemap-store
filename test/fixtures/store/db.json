@@ -1,0 +1,27 @@
+{
+  "codePushSourceMaps": [
+    {
+      "descriptor": {
+        "app": "testapp",
+        "deploymentName": "QA",
+        "label": "v10",
+        "platform": "android",
+        "version": "1.0.0"
+      },
+      "sourcemap": "89558600-dce8-44aa-b0b2-fefb11b6f556",
+      "timestamp": 1569369288968
+    }
+  ],
+  "containerSourceMaps": [
+    {
+      "descriptor": {
+        "app": "testapp",
+        "containerVersion": "1000.0.10",
+        "platform": "android",
+        "version": "1.0.0"
+      },
+      "sourcemap": "89558600-dce8-44aa-b0b2-fefb11b6f556",
+      "timestamp": 1569369288968
+    }
+  ]
+}
